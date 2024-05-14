@@ -6,4 +6,5 @@ const (
     ChatMessage KickEvent = iota
     UserBanned
     MessageDeleted
+    ChatCleared
 )
