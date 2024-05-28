@@ -7,3 +7,5 @@ const (
     Kick
     Discord
 )
+
+const Max Platform = Discord
