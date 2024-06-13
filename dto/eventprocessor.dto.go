@@ -1,6 +1,6 @@
 package dto
 
-import "github.com/ReBotifyOrg/crosscutting/platform"
+import "github.com/RebotifyOrg/crosscutting/platform"
 
 type EventProcessorMessageDTO struct {
 	Platform platform.Platform `json:"platform"`
