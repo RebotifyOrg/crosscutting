@@ -3,6 +3,6 @@ package gametypeevent
 type GameTypeEvent int
 
 const (
-	Start GameTypeEvent = iota,
-	Stop,
+	Start GameTypeEvent = iota
+	Stop
 )
