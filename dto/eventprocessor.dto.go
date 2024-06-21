@@ -14,5 +14,5 @@ type EventProcessorMessageDTO struct {
 
 type EventProcessorMessageDataDTO struct {
 	Event internalevent.InternalEvent `json:"event"`
-	Data  interface{}                 `json:"data"`
+	Data  json.RawMessage             `json:"data"`
 }
