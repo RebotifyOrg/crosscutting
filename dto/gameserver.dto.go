@@ -12,6 +12,7 @@ type GameServerMessageDTO struct {
 	Data     GameServerMessageDataDTO `json:"data"`
 }
 type GameServerMessageDataDTO struct {
-	Event  gametypeevent.GameTypeEvent `json:"event"`
-	UserId uuid.UUID                   `json:"userId"`
+	Event    gametypeevent.GameTypeEvent `json:"event"`
+	UserId   uuid.UUID                   `json:"userId"`
+	Username string                      `json:"username"`
 }

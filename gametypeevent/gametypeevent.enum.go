@@ -5,4 +5,5 @@ type GameTypeEvent int
 const (
 	Start GameTypeEvent = iota
 	Stop
+	PlayerJoin
 )
