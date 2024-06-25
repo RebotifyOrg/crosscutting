@@ -8,10 +8,10 @@ import (
 )
 
 type SchedulerDTO struct {
-	InternalEvent internalevent.InternalEvent `redis:"internalEvent"`
-	ScheduleEvent int                         `redis:"scheduleEvent"`
-	UserId        uuid.UUID                   `redis:"userId"`
-	Seconds       int                         `redis:"seconds"`
+	InternalEvent internalevent.InternalEvent `json:"internalEvent"`
+	ScheduleEvent int                         `json:"scheduleEvent"`
+	UserId        uuid.UUID                   `json:"userId"`
+	Seconds       int                         `json:"seconds"`
 }
 
 func (i SchedulerDTO) MarshalBinary() ([]byte, error) {
