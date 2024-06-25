@@ -6,4 +6,5 @@ const (
 	Start GameTypeEvent = iota
 	Stop
 	PlayerJoin
+	SessionStart
 )
