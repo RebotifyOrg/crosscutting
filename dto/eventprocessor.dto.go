@@ -16,3 +16,19 @@ type EventProcessorMessageDataDTO struct {
 	Event internalevent.InternalEvent `json:"event"`
 	Data  json.RawMessage             `json:"data"`
 }
+
+func (i EventProcessorMessageDTO) MarshalBinary() ([]byte, error) {
+	return json.Marshal(i)
+}
+
+func (i *EventProcessorMessageDTO) UnmarshalBinary(data []byte) error {
+	return json.Unmarshal(data, i)
+}
+
+func (i EventProcessorMessageDataDTO) MarshalBinary() ([]byte, error) {
+	return json.Marshal(i)
+}
+
+func (i *EventProcessorMessageDataDTO) UnmarshalBinary(data []byte) error {
+	return json.Unmarshal(data, i)
+}
