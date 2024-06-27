@@ -8,6 +8,7 @@ import (
 )
 
 type SchedulerDTO struct {
+	ScheduleId    uint64                      `json:"scheduleId"`
 	InternalEvent internalevent.InternalEvent `json:"internalEvent"`
 	ScheduleEvent int                         `json:"scheduleEvent"`
 	UserId        uuid.UUID                   `json:"userId"`
